@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Week-7-Weekend-Project-Weather-API</title>
+<script defer src="main.js"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <input type="text" style="margin-bottom:20px; margin-top:20px; margin-right:10px; width:205px;" placeholder="Enter Cip Code"> <!-- instead of having a form, we are tweaking how 
+                    our button works in loadData() func of JS, we are adding a variable to get an input from this input -->
+
+                    <button class="btn btn-primary" style="height:40px ;" onclick="loadData()">Search</button>
+                    <h4 id="city">Your City's Weather</h4>
+                    <div class="card-body" style="border-style:solid; border-color:grey; width: 207px; margin-bottom:10px;">
+                        <h5 class="card-title" style="background-color:red; width:200px; color:white; padding-left:5px; margin-left:-15px; margin-top:-15px;">High</h5>
+                        <p class="card-text" id="high" style="height:20px;"></p>
+                    </div>
+                    <div class="card-body" style="border-style:solid; border-color:grey; width: 207px; margin-bottom:10px;">
+                        <h5 class="card-title" style="background-color:blue; width:200px; color:white; padding-left:5px; margin-left:-15px; margin-top:-15px;">Low</h5>
+                        <p class="card-text" id="low" style="height:20px;"></p>
+                    </div>
+                    <div class="card-body" style="border-style:solid; border-color:grey; width: 207px; margin-bottom:10px;">
+                        <h5 class="card-title" style="background-color:teal; width:200px; color:white; padding-left:5px; margin-left:-15px; margin-top:-15px;">Forecast</h5>
+                        <p class="card-text" id="forecast" style="height:20px;"></p>
+                    </div>
+                    <div class="card-body" style="border-style:solid; border-color:grey; width: 207px; margin-bottom:10px;">
+                        <h5 class="card-title" style="background-color:limegreen; width:200px; color:white; padding-left:5px; margin-left:-15px; margin-top:-15px;">Humidity</h5>
+                        <p class="card-text" id="humidity" style="height:20px;"></p>
+                    </div>
+
+
+                    <section class="list-group">
+    
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
